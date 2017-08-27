@@ -9,8 +9,8 @@ window.onload = function (e) {
     for (var i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', handleButton)
     }
-    for (var i = 0; i < operands.length; i++) {
-        operands[i].addEventListener('input', handleOperand)
+    for (var n = 0; n < operands.length; n++) {
+        operands[n].addEventListener('input', handleOperand)
     }
 
 
@@ -20,13 +20,13 @@ window.onload = function (e) {
         if (buttonAttr === 'sum') {
             res.innerHTML = +operand1.value + +operand2.value;
         }
-        if(buttonAttr === 'dif') {
+        else if(buttonAttr === 'dif') {
             res.innerHTML = +operand1.value - +operand2.value;
         }
-        if (buttonAttr === 'mul') {
+        else if (buttonAttr === 'mul') {
             res.innerHTML = +operand1.value * +operand2.value;
         }
-        if (buttonAttr === 'div') {
+        else if (buttonAttr === 'div') {
             res.innerHTML = +operand1.value / +operand2.value;
         }
         console.log(buttonAttr);

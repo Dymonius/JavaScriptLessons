@@ -1,0 +1,10 @@
+html, body{
+    margin: 20px;
+}
+input {
+    display: block;
+    margin: 10px;
+}
+.wrong-input {
+    border-color: red;
+}
