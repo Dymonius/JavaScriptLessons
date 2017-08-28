@@ -5,8 +5,8 @@ window.onload = function () {
 
     sendButton.addEventListener('click', function (e) {
         for (var i = 0; i < textInputs.length; i++) {
-            console.log(textInputs[i].value);
-            if (textInputs[i].value == 0) {
+            if (textInputs[i].value === '') {
+                e.preventDefault();
                 textInputs[i].classList.add('wrong-input');
             }
             else {
